@@ -27,7 +27,7 @@ const Header = () => {
     }, observerOptions);
 
     // Observar todas las secciones que nos interesan
-    const sections = ['home', 'about', 'projects', 'skills', 'contact'];
+    const sections = ['home', 'about', 'certifications', 'skills', 'projects', 'contact'];
     sections.forEach(id => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -42,6 +42,7 @@ const Header = () => {
   const navLinks = [
     { id: 'home', label: 'Inicio' },
     { id: 'about', label: 'Sobre mí' },
+    { id: 'certifications', label: 'Certs' },
     { id: 'skills', label: 'Stack' },
     { id: 'projects', label: 'Proyectos' }
   ];

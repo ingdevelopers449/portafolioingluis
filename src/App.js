@@ -3,6 +3,7 @@ import Cursor from './componentes/cursor';
 import Header from './componentes/header';
 import Hero from './componentes/hero';
 import About from './componentes/about';
+import Certifications from './componentes/certifications';
 import Skills from './componentes/skills';
 import Projects from './componentes/projects';
 import Contact from './componentes/contact';
@@ -20,6 +21,7 @@ function App() {
         <Header />
         <Hero />
         <About />
+        <Certifications />
         <Skills />
         <Projects />
         <Contact />
