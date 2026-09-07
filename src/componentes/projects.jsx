@@ -79,12 +79,12 @@ const Projects = () => {
               {/* Contenedor de la Imagen */}
               <div className="relative h-64 overflow-hidden bg-[#161618]">
                 {/* Overlay oscuro para integrar la imagen al tema */}
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/10 transition-all duration-500 z-10 pointer-events-none"></div>
                 {project.image ? (
                   <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover filter grayscale-[40%] brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transform group-hover:scale-105 transition-all duration-700 ease-out"
                   />
                 ) : (
                   <div className="w-full h-full flex flex-col items-center justify-center gap-4 opacity-30 group-hover:opacity-60 transition-opacity duration-500">
