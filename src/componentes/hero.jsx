@@ -18,10 +18,10 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col xl:flex-row xl:items-end gap-6 mb-2">
-            <h1 className="text-6xl md:text-8xl font-extrabold text-white leading-[1] tracking-tight">
-              Luis <br />
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
+              Luis Felipe <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600">
-                Lozada.
+                Lozada Bastidas.
               </span>
             </h1>
             <div className="xl:mb-4">
