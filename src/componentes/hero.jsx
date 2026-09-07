@@ -46,18 +46,21 @@ const Hero = () => {
         {/* Right Content - Prominent Photo + Floating Terminal */}
         <div className="relative flex justify-center lg:justify-end mt-12 lg:mt-0 w-full mx-auto lg:mx-0">
           
-          {/* Main Photo (No Filters, Full Color) */}
-          <div className="relative z-10 w-[280px] md:w-[380px]">
-            {/* Subtle glow behind photo */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-zinc-800/20 rounded-full blur-3xl z-0"></div>
+          {/* Main Photo (Enmarcada) */}
+          <div className="relative z-10 w-[280px] md:w-[350px]">
+            {/* Subtle glow behind frame */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white/10 rounded-full blur-3xl z-0"></div>
             
-            <img 
-              src={fotoLuis} 
-              alt="Luis Felipe" 
-              className="w-full h-auto object-cover relative z-10 drop-shadow-2xl"
-            />
-            {/* Gradient to blend with background */}
-            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#09090b] to-transparent z-20"></div>
+            {/* El Marco Blanco / Glassmorphism */}
+            <div className="relative z-10 rounded-[2rem] border-2 border-white/60 bg-gradient-to-b from-zinc-800/50 to-[#09090b] p-4 pb-0 overflow-hidden shadow-2xl backdrop-blur-md">
+              <img 
+                src={fotoLuis} 
+                alt="Luis Felipe" 
+                className="w-full h-auto object-cover relative z-10 transform translate-y-4"
+              />
+              {/* Gradient to blend the bottom of the photo inside the frame */}
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#09090b] to-transparent z-20"></div>
+            </div>
           </div>
 
           {/* Floating Terminal Card over the image */}
