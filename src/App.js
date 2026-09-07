@@ -8,6 +8,7 @@ import Skills from './componentes/skills';
 import Projects from './componentes/projects';
 import Contact from './componentes/contact';
 import Footer from './componentes/footer';
+import Chatbot from './componentes/chatbot/Chatbot';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
+        <Chatbot />
       </div>
     </div>
   );
