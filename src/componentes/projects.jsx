@@ -4,6 +4,7 @@ import imgFactu from '../img/factuweb.png';
 import imgAirsense from '../img/airsense.png';
 import imgFockus from '../img/fockuskid.png';
 import imgAgristock from '../img/agristock.png';
+import imgBovinos from '../img/bovinosai.png';
 
 const Projects = () => {
   const projectList = [
@@ -38,6 +39,14 @@ const Projects = () => {
       tags: ["Desarrollo Web", "Base de Datos", "Gestión"],
       github: "https://github.com/ingdevelopers449/tienda-insumos ",
       image: imgAgristock
+    },
+    {
+      title: "Bot de Análisis de Bovinos",
+      status: "En Desarrollo",
+      description: "Desarrollé un sistema de análisis inteligente para la Unidad de Ganadería del SENA. El bot utiliza análisis de imágenes con IA para identificar razas bovinas y detectar enfermedades de forma temprana, optimizando la toma de decisiones en el sector ganadero.",
+      tags: ["Python", "IA", "Análisis de Imágenes"],
+      github: "https://github.com/ingdevelopers449",
+      image: imgBovinos
     }
   ];
 
