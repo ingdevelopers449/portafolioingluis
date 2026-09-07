@@ -36,10 +36,10 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 mt-4">
-            <button className="px-5 py-2.5 rounded-lg bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition-colors duration-300 flex items-center gap-2">
+            <a href="#projects" className="px-5 py-2.5 rounded-lg bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition-colors duration-300 flex items-center gap-2">
               Explorar Proyectos
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-            </button>
+            </a>
           </div>
         </div>
         
