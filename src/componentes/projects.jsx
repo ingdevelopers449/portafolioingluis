@@ -5,6 +5,7 @@ import imgAirsense from '../img/airsense.png';
 import imgFockus from '../img/fockuskid.png';
 import imgAgristock from '../img/agristock.png';
 import imgBovinos from '../img/bovinosai.png';
+import imgAgente from '../img/agente_socioeconomico.png';
 
 const Projects = () => {
   const projectList = [
@@ -53,8 +54,8 @@ const Projects = () => {
       status: "Completado",
       description: "Diseñé y desarrollé este agente inteligente para el área de Bienestar al Aprendiz del SENA CEFA. El sistema automatiza la verificación de registros socioeconómicos en PDF: el agente carga el documento, lo procesa con la API de Gemini y extrae automáticamente campos clave como nombre, ficha, SISBÉN y apoyo solicitado.",
       tags: ["Python", "Gemini API", "Gradio", "IA Generativa"],
-      github: "https://github.com/ingdevelopers449",
-      image: imgBovinos
+      github: "https://colab.research.google.com/drive/1Rdo5mhT1LU9wLZC4q3_jLzegWKl1pOCZ?usp=sharing",
+      image: imgAgente
     }
   ];
 
