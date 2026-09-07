@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import Cursor from './componentes/cursor';
+import Header from './componentes/header';
+import Hero from './componentes/hero';
+import About from './componentes/about';
+import Skills from './componentes/skills';
+import Projects from './componentes/projects';
+import Contact from './componentes/contact';
+import Footer from './componentes/footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-zinc-950 min-h-screen text-zinc-100 selection:bg-cyan-500/30 relative">
+      {/* Global subtle dot pattern */}
+      <div className="fixed inset-0 z-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #3f3f46 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+      
+      <div className="relative z-10">
+        <Cursor />
+        <Header />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

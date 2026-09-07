@@ -1,0 +1,40 @@
+.animate-pulse-fast {
+  animation: pulse-fast 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-fast {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .7;
+    transform: scale(1.05);
+  }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 2s ease-in-out forwards;
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* SVG Line Drawing Animation applied globally for preloader */
+.animate-draw-svg path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw-svg 2s ease-in-out forwards;
+}
+
+@keyframes draw-svg {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

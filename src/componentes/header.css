@@ -1,0 +1,37 @@
+/* Clean, professional styles for the header */
+
+.nav-link-clean {
+  @apply text-gray-400 text-sm font-medium transition-all duration-300 relative;
+}
+
+.nav-link-clean:hover {
+  @apply text-white;
+}
+
+.nav-link-clean.active {
+  @apply text-white font-semibold;
+}
+
+.nav-link-clean.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #22d3ee; /* cyan-400 */
+}
+
+.download-btn {
+  @apply text-gray-300 text-sm font-medium px-5 py-2.5 rounded-lg border border-gray-700 bg-transparent transition-all duration-300;
+}
+
+.download-btn:hover {
+  @apply text-white border-gray-400 bg-white/5;
+}
+
+.logo-clean {
+  font-family: 'Outfit', sans-serif;
+}
