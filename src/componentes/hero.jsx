@@ -40,13 +40,6 @@ const Hero = () => {
               Explorar Proyectos
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </button>
-            <a 
-              href="/cv.pdf" 
-              download="CV_Luis_Lozada.pdf"
-              className="px-5 py-2.5 rounded-lg border border-zinc-700 bg-zinc-900 text-zinc-300 text-sm font-mono hover:bg-zinc-800 hover:text-white transition-colors duration-300 flex items-center gap-2"
-            >
-              <span className="text-zinc-500">$</span> cat cv.pdf
-            </a>
           </div>
         </div>
         

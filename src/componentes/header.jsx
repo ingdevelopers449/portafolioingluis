@@ -81,8 +81,15 @@ const Header = () => {
           ))}
         </nav>
         
-        {/* Action Button */}
-        <div className="hidden md:block">
+        {/* Action Buttons */}
+        <div className="hidden md:flex items-center gap-3">
+          <a 
+            href="/cv.pdf" 
+            download="CV_Luis_Lozada.pdf"
+            className="flex items-center justify-center px-4 py-2 rounded-full border border-zinc-700 bg-transparent text-zinc-300 text-xs font-bold hover:bg-white/10 hover:text-white transition-all duration-300"
+          >
+            Descargar CV
+          </a>
           <a href="mailto:pipelozada994@gmail.com" className="flex items-center justify-center px-5 py-2 rounded-full border border-white/10 bg-[#111113] text-zinc-300 text-xs font-bold hover:bg-white hover:text-black transition-all duration-300 shadow-lg">
             Contactar
           </a>
