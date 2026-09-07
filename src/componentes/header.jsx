@@ -61,7 +61,7 @@ const Header = () => {
           <div className="w-8 h-8 bg-white text-black rounded-lg flex items-center justify-center font-bold text-lg font-mono transform transition-transform group-hover:scale-105 duration-300 shadow-lg">
             L
           </div>
-          <span className="ml-3 font-semibold text-zinc-100 tracking-tight hidden sm:block">Luis Lozada</span>
+          <span className="ml-3 font-semibold text-zinc-100 tracking-tight hidden sm:block">Luis Felipe Lozada Bastidas</span>
         </div>
         
         {/* Navigation - Con Active State Tracker */}
