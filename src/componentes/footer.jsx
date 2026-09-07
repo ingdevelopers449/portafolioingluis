@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center w-full text-zinc-600 text-sm font-mono">
           <p>&copy; {new Date().getFullYear()} Luis Felipe Lozada.</p>
           <p className="mt-2 md:mt-0 flex items-center gap-1">
-            <span className="text-zinc-500">//</span> Designed with logic.
+            <span className="text-zinc-500">{"//"}</span> Designed with logic.
           </p>
         </div>
       </div>

@@ -41,7 +41,7 @@ const About = () => {
               <p className="text-zinc-500 text-xs">Curso Especial Práctico</p>
             </div>
             <div>
-              <p className="text-3xl font-mono text-white mb-1">10<span className="text-zinc-600">+</span></p>
+              <p className="text-3xl font-mono text-white mb-1">4<span className="text-zinc-600">+</span></p>
               <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider">Proyectos Base</p>
             </div>
           </div>

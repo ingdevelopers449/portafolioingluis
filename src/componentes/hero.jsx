@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
             <div className="xl:mb-4">
               <span className="inline-block text-sm md:text-base font-mono text-zinc-400 px-4 py-2 border border-white/5 rounded-full bg-zinc-900/50 backdrop-blur-sm">
-                // Análisis y Desarrollo de Software
+                {"//"} Análisis y Desarrollo de Software
               </span>
             </div>
           </div>
