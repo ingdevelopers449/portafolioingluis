@@ -42,8 +42,8 @@ const Header = () => {
   const navLinks = [
     { id: 'home', label: 'Inicio' },
     { id: 'about', label: 'Sobre mí' },
-    { id: 'projects', label: 'Proyectos' },
-    { id: 'skills', label: 'Stack' }
+    { id: 'skills', label: 'Stack' },
+    { id: 'projects', label: 'Proyectos' }
   ];
 
   return (
