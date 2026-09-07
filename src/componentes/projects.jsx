@@ -45,6 +45,14 @@ const Projects = () => {
       status: "En Desarrollo",
       description: "Desarrollé un sistema de análisis inteligente para la Unidad de Ganadería del SENA. El bot utiliza análisis de imágenes con IA para identificar razas bovinas y detectar enfermedades de forma temprana, optimizando la toma de decisiones en el sector ganadero.",
       tags: ["Python", "IA", "Análisis de Imágenes"],
+      github: "https://colab.research.google.com/drive/1obFfWTToHGHJs4QSLMA7D2UZ1FFT3WId?usp=sharing",
+      image: imgBovinos
+    },
+    {
+      title: "Agente de Formatos Socioeconómicos",
+      status: "Completado",
+      description: "Diseñé y desarrollé este agente inteligente para el área de Bienestar al Aprendiz del SENA CEFA. El sistema automatiza la verificación de registros socioeconómicos en PDF: el agente carga el documento, lo procesa con la API de Gemini y extrae automáticamente campos clave como nombre, ficha, SISBÉN y apoyo solicitado.",
+      tags: ["Python", "Gemini API", "Gradio", "IA Generativa"],
       github: "https://github.com/ingdevelopers449",
       image: imgBovinos
     }
