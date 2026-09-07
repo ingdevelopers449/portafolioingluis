@@ -3,7 +3,7 @@ import { ReactComponent as LogoLF } from '../img/logo-lf.svg';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#09090b] border-t border-white/5 pt-20 pb-10 overflow-hidden">
+    <footer className="relative bg-[#09090b] border-t border-white/5 pt-12 pb-10 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-zinc-500/50 to-transparent"></div>
       
       {/* Huge background text */}
