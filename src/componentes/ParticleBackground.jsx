@@ -1,25 +1,17 @@
-import React, { useEffect, useState, useMemo } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import React, { useMemo } from "react";
+import Particles, { ParticlesProvider } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
 const ParticleBackground = () => {
-  const [init, setInit] = useState(false);
-
-  // Inicialización del motor de partículas
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      // loadFull incluye todas las features necesarias (líneas, repulsión, etc.)
-      await loadFull(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
+  const init = async (engine) => {
+    await loadFull(engine);
+  };
 
   const options = useMemo(
     () => ({
       background: {
         color: {
-          value: "transparent", // Fondo transparente para que se mezcle con tu bg oscuro
+          value: "transparent",
         },
       },
       fpsLimit: 60,
@@ -39,14 +31,14 @@ const ParticleBackground = () => {
             quantity: 4,
           },
           repulse: {
-            distance: 100, // Qué tanto se alejan las partículas del cursor
+            distance: 100,
             duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#22d3ee", // Cian (haciendo match con tu cursor cyan-400)
+          value: "#22d3ee",
         },
         links: {
           color: "#22d3ee",
@@ -70,7 +62,7 @@ const ParticleBackground = () => {
             enable: true,
             area: 800,
           },
-          value: 80, // Cantidad de nodos (ajustar si afecta rendimiento)
+          value: 80,
         },
         opacity: {
           value: 0.5,
@@ -85,22 +77,20 @@ const ParticleBackground = () => {
       detectRetina: true,
       fullScreen: {
         enable: true,
-        zIndex: 0 // Atrás de todo tu contenido
+        zIndex: 0
       }
     }),
     []
   );
 
-  if (!init) {
-    return null;
-  }
-
   return (
-    <Particles
-      id="tsparticles"
-      options={options}
-      className="absolute inset-0 pointer-events-none" // Para que no bloquee los clics en la web
-    />
+    <ParticlesProvider init={init}>
+      <Particles
+        id="tsparticles"
+        options={options}
+        className="absolute inset-0 pointer-events-none"
+      />
+    </ParticlesProvider>
   );
 };
 
