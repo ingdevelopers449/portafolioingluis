@@ -9,6 +9,7 @@ import Projects from './componentes/projects';
 import Contact from './componentes/contact';
 import Footer from './componentes/footer';
 import Chatbot from './componentes/chatbot/Chatbot';
+import ParticleBackground from './componentes/ParticleBackground';
 import './App.css';
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
     <div className="App bg-zinc-950 min-h-screen text-zinc-100 selection:bg-cyan-500/30 relative">
       {/* Global subtle dot pattern */}
       <div className="fixed inset-0 z-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #3f3f46 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+      
+      {/* Interactive Particle Background (Red Neuronal) */}
+      <ParticleBackground />
       
       <div className="relative z-10">
         <Cursor />
