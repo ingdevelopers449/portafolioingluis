@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactComponent as LogoLF } from '../img/logo-lf.svg';
 
 const Footer = () => {
   return (
